@@ -1,0 +1,92 @@
+/* Basic styles for the body */
+body {
+    background-color: #f8e6f0; /* Light pink background color */
+    font-family: 'Garamond', serif; /* Elegant font style */
+    color: #4b3d3d; /* Dark text color */
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Center text alignment */
+}
+
+/* Styles for the envelope */
+.envelope {
+    cursor: pointer; /* Changes cursor to pointer when hovering */
+    width: 300px; /* Adjust width as needed */
+    height: 200px; /* Adjust height as needed */
+    background-color: #ffccff; /* Light pink envelope color */
+    border-radius: 10px; /* Rounded corners */
+    position: absolute; /* Positioned relative to the body */
+    left: 50%; /* Centered horizontally */
+    top: 50%; /* Centered vertically */
+    transform: translate(-50%, -50%); /* Adjusts position to center */
+    display: flex; /* Flexbox to center the emoji */
+    justify-content: center; /* Centering horizontally */
+    align-items: center; /* Centering vertically */
+    font-size: 40px; /* Size of the emoji */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Subtle shadow effect */
+    animation: float-envelope 3s ease-in-out infinite; /* Floating animation */
+}
+
+header {
+    position: relative; /* Make header a positioned element */
+    height: 100px; /* Set height according to your design */
+}
+
+/* Styles for the heart */
+.heart {
+    font-size: 90px; /* Size of the heart */
+    color: #ff69b4; /* Initial color (pink) */
+    position: absolute; /* Positioned relative to the header */
+    left: 50%; /* Centered horizontally */
+    top: 10%; /* Adjust this value to position it vertically within the header */
+    transform: translate(-50%, 0%); /* Adjusts position to center */
+    animation: float 3s ease-in-out infinite, colorChange 3s ease-in-out infinite; /* Floating and color change animations */
+    display: none; /* Initially hidden */
+}
+
+/* Floating animation for the heart */
+@keyframes float {
+    0% { transform: translate(-50%, 0); }
+    50% { transform: translate(-50%, -10px); }
+    100% { transform: translate(-50%, 0); }
+}
+
+/* Color change animation */
+@keyframes colorChange {
+    0%, 100% { color: #ff69b4; } /* Pink */
+    50% { color: #ff69b4; } /* Red */
+}
+
+/* Color change animation */
+@keyframes colorChange {
+    0%, 100% { color: #ff69b4; } /* Pink */
+    50% { color: #ff69b4; } /* Red */
+}
+
+/* Styles for the love letter */
+/* Styles for the love letter */
+.letter {
+    max-width: 600px; /* Maximum width of the letter */
+    margin: 150px auto; /* Increased top margin to create space */
+    padding: 20px; /* Padding around the letter */
+    border: 1px solid #d7c6c0; /* Border around the letter */
+    border-radius: 10px; /* Rounded corners */
+    background-color: #fff; /* White background for the letter */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    font-size: 18px; /* Font size of the letter text */
+    line-height: 1.6; /* Line spacing */
+    display: none; /* Initially hidden */
+}
+
+
+/* Styles for the cat GIF */
+.cat-gif {
+    margin-top: 20px; /* Margin above the GIF */
+}
+
+/* Floating animation for the envelope */
+@keyframes float-envelope {
+    0% { transform: translate(-50%, 0); } /* Start position */
+    50% { transform: translate(-50%, -10px); } /* Move up slightly */
+    100% { transform: translate(-50%, 0); } /* Return to start position */
+}

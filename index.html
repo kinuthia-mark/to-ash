@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Love Letter</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to the CSS file -->
+</head>
+<body>
+    <!-- Background music -->
+    <audio id="backgroundMusic" loop autoplay>
+        <source src="your-music-file.mp3" type="audio/mpeg"> <!-- Replace with your audio file path -->
+        Your browser does not support the audio tag.
+    </audio>
+
+    <!-- Large envelope that triggers the opening of the letter -->
+    <div class="envelope" onclick="openEnvelope()">
+        <span>💌</span> <!-- Using a heart envelope emoji -->
+    </div>
+
+    <!-- Heart that will float above the letter -->
+    <div class="heart">💗</div>
+
+    <!-- Love letter content -->
+    <div class="letter">
+        <h1>My One and Only Arshley,</h1>
+        <p>
+            As I sit down to write this letter, I can’t help but smile, thinking of you and the light you bring into my life. You are, without a doubt, the most special girl in the world to me. Your beauty, both inside and out, is a rare gift that I cherish every day. When I think of you, my heart is filled with love and gratitude for having someone as extraordinary as you in my life.
+        </p>
+        <p>
+            Your laughter is literally the cutest thing and that brightens even the darkest days, and your smile can turn the most mundane moments into cherished memories. You have a way of making everything feel magical, from our painting dates to our late-night talks. Each moment spent with you feels like a precious treasure, and I find myself counting the seconds until we can create more beautiful memories together.
+        </p>
+        <p>
+            You have this incredible ability to make me feel seen and understood, and that’s a rare and precious gift. In all the rough conversations we have had it may sound like I do not but I really do. You embrace the world with a kindness that touches everyone around you, reminding me of the goodness that exists, and it makes me sad to hear when people take advantage of it, they have no idea what they are losing. When you talk about the things you love, like cats and flowers, I see the passion and warmth in your heart, and it makes me love you even more.
+        </p>
+        <p>
+            Arshley, you are deserving of every ounce of love in this world. You have a spirit that deserves to be celebrated, nurtured, and cherished. I want to be the one who showers you with affection and support, reminding you every day just how special you truly are. You deserve all the happiness life can offer, and I hope to be the one who brings that joy to you.
+        </p>
+        <p>
+            Every time we’re together, I feel a connection that goes beyond words. I want you to know that you are my first thought in the morning and my last thought at night. You are the reason I believe in love, and the way you make me feel is something I cannot express enough. I want to wrap you in warmth and tenderness, ensuring you never doubt your worth or how deeply you are loved.
+        </p>
+        <p>
+            Your love has changed me in ways I never expected. You’ve opened my heart and shown me the true meaning of compassion and kindness. With you, I’ve learned to embrace vulnerability, to be more patient, and to strive to be the best version of myself. You inspire me to push beyond my limits and to face challenges with courage. I want you to know that your love empowers me, and I am forever grateful for that.
+        </p>
+        <p>
+            I want you to feel completely supported, no matter what challenges life throws your way. Whatever you’re going through, your problems are mine as well. I promise to be the most reliable person in your life, standing by your side through thick and thin. I will be your confidant, your shoulder to lean on, and your biggest cheerleader. Together, we can face anything that comes our way.
+        </p>
+        <p>
+            And I want you to know that this commitment goes beyond emotional support. As we continue to grow together, I aspire to be there for you financially as well. I dream of a future where we can build a life together, filled with stability and joy. You deserve the world, and I want to be the one who helps make that happen. I am committed to working hard to ensure that we can achieve our dreams and create a life we both love.
+        </p>
+        <p>
+            Let’s continue to nurture this beautiful bond we share, to lift each other higher, and to create a love story that we can both be proud of. I want to make every effort to show you just how special you are to me and to remind you that you are the only one who deserves all my love.
+        </p>
+        <p>
+            So here’s to us, Arshley. Here’s to the laughter, the adventures, and the love we will continue to build together. You are my heart, my joy, and the most special girl in my world.
+        </p>
+
+        <p>
+            With all my love,
+            <br>Mark 💕
+        </p>
+        <!-- Cat GIF -->
+        <div class="cat-gif">
+            <!-- Add the GIF at the end of the letter -->
+        <img src="images/cat gif.gif" alt="A cute cat gif" class="gif" />
+        </div>
+    </div>
+
+    <script>
+        // Function to open the envelope and reveal the heart and letter
+        function openEnvelope() {
+            document.querySelector('.envelope').style.display = 'none'; // Hide the envelope
+            document.querySelector('.heart').style.display = 'block'; // Show the heart
+            document.querySelector('.letter').style.display = 'block'; // Show the letter
+        }
+    </script>
+</body>
+</html>
