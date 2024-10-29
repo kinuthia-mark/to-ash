@@ -7,11 +7,38 @@
     <link rel="stylesheet" href="styles.css"> <!-- Link to the CSS file -->
 </head>
 <body>
-    <!-- Background music -->
-    <audio id="backgroundMusic" loop autoplay>
-        <source src="your-music-file.mp3" type="audio/mpeg"> <!-- Replace with your audio file path -->
+    <!-- Audio Element -->
+    <audio id="background-audio" loop>
+        <source src="music/Drake - Yebba’s Heartbreak (Audio).mp3" type="audio/mpeg">
         Your browser does not support the audio tag.
     </audio>
+
+    <script>
+        var audio = document.getElementById("background-audio");
+
+        function toggleAudio() {
+            if (audio.paused) {
+                audio.play();
+                document.getElementById("toggle-audio").textContent = "Pause Music"; // Change button text to 'Pause'
+            } else {
+                audio.pause();
+                document.getElementById("toggle-audio").textContent = "Play Music"; // Change button text to 'Play'
+            }
+        }
+
+        // Optional: Auto-play on load, but may be blocked by browsers
+        window.onload = function() {
+            // Try to play the audio, might be blocked
+            audio.play().catch(function(error) {
+                console.log('Playback failed:', error);
+            });
+        };
+        </script>
+        
+    </script>
+    <button class="cute-button" id="toggle-audio" onclick="toggleAudio()">Play Music</button>
+
+
 
     <!-- Large envelope that triggers the opening of the letter -->
     <div class="envelope" onclick="openEnvelope()">

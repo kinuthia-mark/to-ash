@@ -90,3 +90,21 @@ header {
     50% { transform: translate(-50%, -10px); } /* Move up slightly */
     100% { transform: translate(-50%, 0); } /* Return to start position */
 }
+
+.cute-button {
+    background-color: #ff9e9e; /* Soft pink color */
+    border: none; /* No border */
+    border-radius: 25px; /* Rounded corners */
+    color: white; /* Text color */
+    font-family: 'Arial', sans-serif; /* Font style */
+    font-size: 18px; /* Font size */
+    padding: 12px 24px; /* Padding around the text */
+    cursor: pointer; /* Cursor changes to pointer */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+}
+
+.cute-button:hover {
+    background-color: #ff6b6b; /* Darker pink on hover */
+    transform: translateY(-2px); /* Slight upward movement on hover */
+}
